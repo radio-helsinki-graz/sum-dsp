@@ -39,7 +39,9 @@ void InitializeProcessing()
 //	VUReleaseFactor = 0.97671133;
 	VUReleaseFactor = 0.999;
 
-	cntMixMinusDelayTop = 3;
+	//5 is correct delay for N-1.
+	//little noise will appear because 'inverted' interpolation
+	cntMixMinusDelayTop = 5;
 	cntMixMinusDelayBottom = 0;
 }
 

@@ -220,8 +220,8 @@ void InitializeMcASP0_dMAX_IRQ()
 	McASP0Serializer[10] = 0x00000002;	//total buss 17-32
 	McASP0Serializer[11] = 0x00000002;	//extern input 1-16*/
 
-	McASP0Serializer[10] = 0x00000000;
-	McASP0Serializer[11] = 0x00000000;
+//	McASP0Serializer[10] = 0x00000000;
+//	McASP0Serializer[11] = 0x00000000;
 	McASP0Serializer[12] = 0x00000000;
 	McASP0Serializer[13] = 0x00000000;
 	McASP0Serializer[14] = 0x00000000;
