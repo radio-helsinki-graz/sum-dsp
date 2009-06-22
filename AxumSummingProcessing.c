@@ -10,7 +10,7 @@ void InitializeProcessing()
 	for (cntChannel=0; cntChannel<NUMBEROFFACTORS; cntChannel++)
 	{
 		MatrixFactor[cntChannel] = 0;
-		Temp[cntChannel] = 1;
+		Temp[cntChannel] = 0;
 	}
 
 	Temp = (float *)Update_BussMatrixFactor;
@@ -21,7 +21,7 @@ void InitializeProcessing()
  			Temp[cntOutputChannel+cntInputChannel*NUMBEROFBUSSMATRIXOUTPUTCHANNELS] = 0;
 			if ((cntInputChannel&0x01) == (cntOutputChannel&0x01))
 			{
-				Temp[cntOutputChannel+cntInputChannel*NUMBEROFBUSSMATRIXOUTPUTCHANNELS] = 1;
+				Temp[cntOutputChannel+cntInputChannel*NUMBEROFBUSSMATRIXOUTPUTCHANNELS] = 0;
 			}
 		}
 	}
