@@ -261,8 +261,8 @@ void InitializeMcASP0_dMAX_IRQ()
 		*(unsigned int *)(dMAXControlRegistersBase+DEHPR)	|= 0x04000010;
 		*(unsigned int *)(dMAXControlRegistersBase+DEER)	|= 0x04000030;
 
-		HiEventEntry4[0] = 0x83566A03;	//Tx, TCC = 3, TCINT
-		LoEventEntry5[0] = 0x82167503;	//Rx, TCC = 2, NO TCINT.
+		HiEventEntry4[0] = 0x82166A03;	//Tx, TCC = 2, NO TCINT
+		LoEventEntry5[0] = 0x83567503;	//Rx, TCC = 3, TCINT.
 		HiEventEntry26[0] = 0x00020007;	//McASP0 Error -> INT9
 
 		HiParameterEntry6[0] = (unsigned int)DMABuffer_XMIT[0];
